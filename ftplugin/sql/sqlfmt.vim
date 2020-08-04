@@ -1,5 +1,5 @@
 if !exists('g:sqlfmt_command')
-  let g:sqlfmt_command = 'sqlfmt'
+  let g:sqlfmt_command = 'snowflakefmt'
 endif
 
 if !exists('g:sqlfmt_options')

@@ -22,6 +22,9 @@ function! sqlfmt#run(...) abort
     silent! %d _
     call setline(1, lines)
     call setpos('.', pos)
+    " clear and close quickfix
+    cexpr []
+    cclose
   else
     cexp lines
   endif

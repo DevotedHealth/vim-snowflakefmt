@@ -1,23 +1,12 @@
-vim-sqlfmt
-==========
+# vim-snowflakefmt
 
-A plugin for SQL formatter like gofmt
+Run `snowflakefmt` on sql code
 
 ## Installation
 
-With [vim-plug](https://github.com/junegunn/vim-plug),
-
 ```vim
-Plug 'b4b4r07/vim-sqlfmt'
+Plugin 'DevotedHealth/vim-snowflakefmt'
 ```
-
-Requirement:
-
-Available plugins | Paste on your `.vimrc`
----|---
-[jackc/sqlfmt](https://github.com/jackc/sqlfmt) | <pre>let g:sqlfmt_command = "sqlfmt"<br>let g:sqlfmt_options = ""</pre>
-[andialbrecht/sqlparse](https://github.com/andialbrecht/sqlparse) | <pre>let g:sqlfmt_command = "sqlformat"<br>let g:sqlfmt_options = "-r -k upper"</pre>
-... | ...
 
 ## Usage
 
@@ -29,10 +18,3 @@ It can also be executed directly as follows:
 :SQLFmt [files...]
 ```
 
-## License
-
-MIT
-
-## Author
-
-b4b4r07
