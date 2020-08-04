@@ -1,5 +1,5 @@
 if !exists('g:sqlfmt_command')
-  finish
+  let g:sqlfmt_command = 'snowflakefmt'
 endif
 
 if !executable(g:sqlfmt_command) || !get(g:, 'sqlfmt_auto', 1)

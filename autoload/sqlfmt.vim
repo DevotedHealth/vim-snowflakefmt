@@ -1,8 +1,6 @@
 function! sqlfmt#run(...) abort
   if g:sqlfmt_command ==# ''
-    redraw
-    echohl ErrorMsg | echomsg 'g:sqlfmt_command is not specified' | echohl None
-    return
+    let g:sqlfmt_command = 'snowflakefmt'
   endif
   if !executable(g:sqlfmt_command)
     redraw
