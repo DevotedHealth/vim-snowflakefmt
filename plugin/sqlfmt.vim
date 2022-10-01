@@ -8,5 +8,5 @@ endif
 
 augroup SQLFmt
   au!
-  autocmd BufWritePre *.sql call sqlfmt#run()
+  autocmd BufWritePost *.sql call sqlfmt#run()
 augroup END
